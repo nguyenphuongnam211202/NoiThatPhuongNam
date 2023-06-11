@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Basic -->
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <!-- Site Metas -->
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+
+    <title>Nội Thất Phương Nam</title>
+
+    <!-- slider stylesheet -->
+    <link rel="stylesheet" type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css"/>
+
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+
+    <!-- fonts style -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,700&display=swap"
+          rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet"/>
+    <!-- responsive style -->
+    <link href="css/responsive.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="icon" href="images/logo-tittle.png" type="image/png">
+
+</head>
+
+<body class="sub_page">
+<div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg custom_nav-container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.png" alt=""/>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav  ">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="index.html">Trang chủ <span class="sr-only">Có sẵn</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="about.html"> Chi tiết</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="shop.html">Cửa hàng</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="furniture.html"> Nội thất</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Liên hệ</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="user_option">
+                    <img src="images/user.png" alt="">
+                    <button class="button-form" onclick="document.getElementById('id01').style.display='block'">Đăng
+                        nhập
+                    </button>
+                    <button class="button-form" onclick="document.getElementById('id02').style.display='block'">Đăng
+                        kí
+                    </button>
+
+                    <div id="id01" class="modal">
+
+                        <form class="modal-content animate" action="/action_page.php" method="post">
+                            <div class="imgcontainer">
+                                <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                                      title="Close Modal">&times;</span>
+                                <img src="https://www.w3schools.com/bootstrap4/img_avatar4.png" alt="Avatar"
+                                     class="avatar">
+                            </div>
+
+                            <div class="container">
+                                <label><b>Tên đăng nhập</b></label>
+                                <input type="text" placeholder="Tên đăng nhập" name="uname" required>
+
+                                <label><b>Mật khẩu</b></label>
+                                <input type="password" placeholder="Mật khẩu" name="psw" required>
+
+                                <button type="submit">Đăng nhập</button>
+                                <label>
+                                    <input type="checkbox" checked="checked" name="remember"> Nhớ mật khẩu
+                                </label>
+
+                            </div>
+
+                            <div class="container">
+                                <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                                        class="cancelbtn" style="border-radius: 10px">Hủy
+                                </button>
+                                <span class="psw"><a href="#" style="color: black">Quên mật khẩu ?</a></span>
+                            </div>
+                        </form>
+                    </div>
+                    <div id="id02" class="modal">
+
+                        <form class="modal-content animate" action="/action_page.php" method="post">
+                            <div class="imgcontainer">
+                                <span onclick="document.getElementById('id02').style.display='none'" class="close"
+                                      title="Close Modal">&times;</span>
+
+                            </div>
+
+                            <div class="container">
+                                <div class="container">
+                                    <h2 style="text-align: center"><b>Đăng kí tài khoản</b></h2>
+                                    <label><b>Tên tài khoản</b></label>
+                                    <input type="text" placeholder="Tên đăng kí" name="uname" required>
+
+                                    <label><b>Số điện thoại</b></label>
+                                    <input type="text" placeholder="Số điện thoại" name="phoneNumber" required>
+
+                                    <label><b>Email</b></label>
+                                    <input type="text" placeholder="Email" name="email" required>
+
+                                    <label><b>Mật khẩu</b></label>
+                                    <input type="password" placeholder="Mật khẩu" name="psw" required>
+
+                                    <label><b>Xác nhận mật khẩu</b></label>
+                                    <input type="password" placeholder="Nhập lại mật khẩu" name="psw" required>
+
+                                    <button type="submit">Đăng kí</button>
+
+                                </div>
+
+                            </div>
+
+                            <div class="container">
+                                <button type="button" onclick="document.getElementById('id02').style.display='none'"
+                                        class="btn-danger" style="border-radius: 20px;">Hủy
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
+                        <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
+                    </form>
+                </div>
+
+
+            </nav>
+        </div>
+    </header>
+    <!-- end header section -->
+</div>
+
+
+<!-- about section -->
+
+<section class="about_section layout_padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="detail-box">
+                    <div class="heading_container">
+                        <h2>
+                            Ý TƯỞNG KHÔNG GIAN SỐNG
+                        </h2>
+
+                    </div>
+                    <p>
+                        Sau những ngày dài dành tâm sức cho công việc và xã hội, con người lại càng có nhu cầu tìm về
+                        một chốn an yên để sạc lại năng lượng tinh thần. Đối với nhiều người, nơi chốn bình yên ấy chính
+                        là nhà. Vì vậy mà họ thường dành rất nhiều thời gian, tâm sức để chăm chút và cải tạo mái ấm của
+                        mình, đó có thể là không gian phòng khách, phòng ngủ, phòng ăn hoặc ban công. Dưới đây, <b>Phương
+                        Nam</b>
+                        sẽ gợi ý những bí quyết để nâng cấp không gian sống và tưới mát những năng lượng lành cho tổ ấm
+                        của gia đình nhé.
+                    </p>
+                    <a href="">
+                        Đọc thêm </a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="img-box">
+                    <img src="images/y-tuong.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="img-box">
+                    <img src="images/bi-quyet.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="detail-box">
+                    <div class="heading_container">
+                        <h2>
+                            BÍ QUYẾT CHỌN MUA HÀNG TRANG TRÍ
+                        </h2>
+
+                    </div>
+                    <p>
+                        Những món đồ trang trí luôn giúp cho không gian có thêm sức sống, đồng thời đáp ứng linh hoạt
+                        nhu cầu và sở thích của mỗi cá nhân. Một sản phẩm trang trí hoàn hảo khi đó là món đồ phù hợp
+                        với không gian, mang màu sắc hài hòa với đường nét sắc sảo và tinh tế. Ngoài ra, trong quá trình
+                        bài trí không gian, khả năng sáng tạo và trí tưởng tượng của bạn cũng được kích hoạt tối đa. Vậy
+                        bí quyết để chọn mua hàng trang trí chất lượng và độc đáo là gì? Hãy cùng theo dõi bài viết dưới
+                        đây của <b>Phương Nam</b> nhé.
+                    </p>
+                    <a href="">
+                        Đọc thêm
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="detail-box">
+                    <div class="heading_container">
+                        <h2>
+                            NHỮNG LỢI ÍCH KHI DÙNG BÀN ĂN THÔNG MINH
+                        </h2>
+
+                    </div>
+                    <p>
+                        Phòng ăn là nơi tạo cảm giác ấm cúng cho căn hộ, vì thế, sự tiện nghi ở khu vực này luôn được ưu
+                        tiên hàng đầu. Những mẫu bàn ăn thông minh được tích hợp nhiều tính năng và sử dụng trong đa
+                        dạng không gian đang là lựa chọn được chú ý hiện nay. Vậy mẫu bàn ăn thông minh có ưu điểm gì so
+                        với bàn ăn truyền thống? Hãy cùng theo dõi bài viết dưới đây của <b>Phương Nam</b> nhé.
+
+
+                    </p>
+                    <a href="">
+                        Đọc thêm
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="img-box">
+                    <img src="images/ban-thong-minh.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="img-box">
+                    <img src="images/giuong-pio.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="detail-box">
+                    <div class="heading_container">
+                        <h2>
+                            GIƯỜNG NGỦ PIO - HIỆN ĐẠI VÀ THOẢI MÁI
+                        </h2>
+
+                    </div>
+                    <p>
+                        Giường ngủ Pio có thiết kế hiện đại với màu sắc chủ đạo tươi sáng và trang nhã như xanh nhạt,
+                        trắng giúp không gian hài hòa, dễ chịu. Kết hợp cùng bàn đầu giường và đèn trang trí, tranh treo
+                        tường, bạn sẽ có một góc phòng ngủ gần gũi và thân thuộc.
+                    </p>
+                    <a href="">
+                        Đọc thêm
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- end about section -->
+
+
+<!-- info section -->
+<section class="info_section layout_padding2">
+    <div class="container">
+        <div class="info_logo">
+            <h2>
+                PHƯƠNG NAM
+            </h2>
+        </div>
+        <div class="row">
+
+            <div class="col-md-3">
+                <div class="info_contact">
+                    <h5>
+                        Cửa Hàng
+                    </h5>
+                    <div>
+                        <div class="img-box">
+                            <img src="images/location-white.png" width="18px" alt="">
+                        </div>
+                        <p>
+                            Địa Chỉ
+                        </p>
+                    </div>
+                    <div>
+                        <div class="img-box">
+                            <img src="images/telephone-white.png" width="12px" alt="">
+                        </div>
+                        <p>
+                            +0912832391
+                        </p>
+                    </div>
+                    <div>
+                        <div class="img-box">
+                            <img src="images/envelope-white.png" width="18px" alt="">
+                        </div>
+                        <p>
+                            Nguyenphuongnam@gmail.com
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="info_info">
+                    <h5>
+                        Thông tin
+                    </h5>
+                    <p>
+                        Nội thất Phương Nam đã cung cấp cho hàng ngàn gia đình, doanh nghiệp và khách hàng cá nhân sản
+                        phẩm nội thất chất lượng cao, đa dạng về kiểu dáng và phong cách. </p>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="info_insta">
+                    <h5>
+                        Instagram
+                    </h5>
+                    <div class="insta_container">
+                        <div>
+                            <a href="">
+                                <div class="insta-box b-1">
+                                    <img src="images/i-1.jpg" alt="">
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="insta-box b-2">
+                                    <img src="images/i-2.jpg" alt="">
+                                </div>
+                            </a>
+                        </div>
+
+                        <div>
+                            <a href="">
+                                <div class="insta-box b-3">
+                                    <img src="images/i-3.jpg" alt="">
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="insta-box b-4">
+                                    <img src="images/i-4.jpg" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="">
+                                <div class="insta-box b-3">
+                                    <img src="images/i-5.jpg" alt="">
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="insta-box b-4">
+                                    <img src="images/i-6.jpg" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="info_form ">
+                    <h5>
+                        Bản Tin
+                    </h5>
+                    <form action="">
+                        <input type="email" placeholder="Nhập Email của bạn">
+                        <button>
+                            Đăng kí
+                        </button>
+                    </form>
+                    <div class="social_box">
+                        <a href="">
+                            <img src="images/fb.png" alt="">
+                        </a>
+                        <a href="">
+                            <img src="images/twitter.png" alt="">
+                        </a>
+                        <a href="">
+                            <img src="images/linkedin.png" alt="">
+                        </a>
+                        <a href="">
+                            <img src="images/youtube.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- end info_section -->
+
+
+<!-- footer section -->
+<section class="container-fluid footer_section ">
+    <div class="container">
+        <p>
+            &copy; 2023 All Rights Reserved By Phương Nam
+        </p>
+    </div>
+</section>
+<!-- end  footer section -->
+
+
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js">
+</script>
+<script type="text/javascript">
+    $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        navText: [],
+        autoplay: true,
+        autoplayHoverPause: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            420: {
+                items: 2
+            },
+            1000: {
+                items: 5
+            }
+        }
+
+    });
+</script>
+<script>
+    var nav = $("#navbarSupportedContent");
+    var btn = $(".custom_menu-btn");
+    btn.click
+    btn.click(function (e) {
+
+        e.preventDefault();
+        nav.toggleClass("lg_nav-toggle");
+        document.querySelector(".custom_menu-btn").classList.toggle("menu_btn-style")
+    });
+</script>
+<script>
+    $('.carousel').on('slid.bs.carousel', function () {
+        $(".indicator-2 li").removeClass("active");
+        indicators = $(".carousel-indicators li.active").data("slide-to");
+        a = $(".indicator-2").find("[data-slide-to='" + indicators + "']").addClass("active");
+        console.log(indicators);
+
+    })
+</script>
+<script>
+    // Get the modal1
+    var modal = document.getElementById('id01');
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+<script>
+    // Get the modal2
+    var modal = document.getElementById('id02');
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+
+</html>
